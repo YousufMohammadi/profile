@@ -21,10 +21,10 @@
     align-content: center; 
 }
 .logo{
-    width: 60px;
-    height: 60px;
-    border-radius: 20px;
-
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #AF4734;
 }
 .link-container{
     display: flex;
@@ -85,6 +85,40 @@
     font-size: 20px;
     border-radius: 5px;
 }
+.programming-img{
+    width: 250px;
+    height: 250px;
+    border: 2px solid #AF4734;
+    background-color: #AF4734;
+    padding: 0 5px;
+    border-radius: 10px;  
+}
+/* -------------------------------- */
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15%;
+}
+.portfailo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 280px;
+    height:450px;
+
+}
+.about-me{
+    color: #AF4734;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.about-passion{
+    color: black;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
+}
 .image-container{
     width: 250px;
     height: 260px;
@@ -98,4 +132,50 @@
     height: 250px;
     border-radius: 10px;  
 }
-/* -------------------------------- */
+.portfailo-link__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 400px;
+    height:450px;
+}
+.portfailo-link{
+    display: flex;
+    flex-direction: row;
+}
+.link{
+    color: #AF4734;
+    text-decoration: none;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+    width: 280px;
+}
+.link:hover{
+    color: gray;
+    transition: color 0.5s;
+}
+.portfailo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 200px;
+    font-size: 16px;
+    color: gray;
+    text-align: justify;
+}
+.cv-link{
+    color: #AF4734;
+    padding: 10px 20px;
+    border: 1px solid #AF4734;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.cv-link:hover{
+    background-color: #AF4734;
+    color: white;
+    transition: background-color 0.5s;
+}
+/* ---------------------------------- */
