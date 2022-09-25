@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/styles.css">
     <title>Home</title>
+<script>
+//    let link1 = document.getElementById('div-link1').style.display= "show"
+//   let link2 = document.getElementById('div-link2').style.display= "show"
+//   let link3 = document.getElementById('div-link2').style.display= "show"
+// document.getElementById('div-link1').style.display= "hidden"
+function displayAboutMe() {
+   document.getElementById('div-link1').style.display= "flex"
+   document.getElementById('div-link2').style.display= "none"
+   document.getElementById('div-link3').style.display= "none"
+    }
+function displayExperiance() {
+   document.getElementById('div-link1').style.display= "none"
+   document.getElementById('div-link2').style.display= "flex"
+   document.getElementById('div-link3').style.display= "none"     
+    }
+function displaySkills() {
+   document.getElementById('div-link1').style.display= "none"
+   document.getElementById('div-link2').style.display= "none"
+   document.getElementById('div-link3').style.display= "flex"     
+    }
+</script>    
 </head>
 <body>
     <div class="home-container">
@@ -13,11 +34,11 @@
             <div class="nav-container">
                 <img src="resources/css/img/logo.jpg" alt="My-logo" class="logo">
                 <div class="link-container">
-                    <a href="#">home</a>
+                    <a href="index.html">home</a>
                     <a href="#aboutme">about me</a>
                     <a href="#">portfailo</a>
-                    <a href="#">project</a>
-                    <a href="#">contanct</a>
+                    <a href="#myWorks">project</a>
+                    <a href="#">contact</a>
                 </div>
                 <div class="social-container">
                     <a href="https://www.facebook.com/yousuf.mohammadi.71"><img src="resources/css/img/001-facebook.png" alt="facebook" class="social-icon"></a>
@@ -49,22 +70,30 @@
                 </div>
             <div class="portfailo-link__container">
                 <div class="portfailo-link">
-                    <a href="#" class="link">about me</a>
-                    <a href="#" class="link">experience</a>
-                    <a href="#" class="link">skills</a>
+                    <a href="#aboutme" class="link" id="link1" onclick="displayAboutMe()">about me</a>
+                    <a href="#aboutme" class="link" id="link3" onclick="displaySkills()">education</a>
+                    <a href="#aboutme" class="link" id="link2" onclick="displayExperiance()">experience</a>
                 </div>
-                <div class="portfailo-text">
+                <div class="portfailo-text" id="div-link1">
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum molestias vitae a iure velit. Ea similique perferendis nihil eveniet provident?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, dicta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptate?</span>
                     <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, sint.</span>
                 </div>
-                <div class="cv-container">
-                    <a href="#" class="cv-link">download CV</a>
-                    <a href="#" class="cv-link">my works</a>
+                <div class="portfailo-text" id="div-link2" style="display:none ;">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum molestias vitae a iure velit. Ea similique perferendis nihil eveniet provident?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, dicta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptate?</span>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, sint.2222</span>
+                </div>
+                <div class="portfailo-text" id="div-link3" style="display:none ;">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum molestias vitae a iure velit. Ea similique perferendis nihil eveniet provident?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, dicta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptate?</span>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, sint.3333</span>
+                </div>
+                <div class="cv-container" id="cv-1">
+                    <a href="#aboutme" class="cv-link">download CV</a>
+                    <a href="#myWorks" class="cv-link">my works</a>
                 </div>
             </div>
         </div>
-        <div class="project-container">
-            <span class="about-me">
+        <div class="project-container" id="myWorks">
+            <span class="about-me" >
                 <span class="about-me-dash">--</span>
                 <span>my works</span>
             </span>
@@ -73,19 +102,19 @@
                 <div class="cardImg-container1"></div>
                 <span class="card-title">foodBurg</span>
                 <span class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, placeat. Nulla</span>
-                <a href="#" class="card-link">see project</a>
+                <a href="https://github.com/YousufMohammadi/foodBurg" class="card-link">see project</a>
                 </div>
                 <div class="card">
                     <div class="cardImg-container2"></div>
-                    <span class="card-title">foodBurg</span>
+                    <span class="card-title">school</span>
                     <span class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, placeat. Nulla</span>
-                    <a href="#" class="card-link">see project</a>
+                    <a href="https://github.com/YousufMohammadi/school" class="card-link">see project</a>
                 </div>
                 <div class="card">
                     <div class="cardImg-container3"></div>
-                    <span class="card-title">foodBurg</span>
+                    <span class="card-title">stoorg</span>
                     <span class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, placeat. Nulla</span>
-                    <a href="#" class="card-link">see project</a>
+                    <a href="https://github.com/YousufMohammadi/stoorg" class="card-link">see project</a>
             
             </div>
                 

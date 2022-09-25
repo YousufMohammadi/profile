@@ -219,13 +219,21 @@
     border-radius: 5px;
     box-shadow: 2px 2px 5px 2px  #aaa;
 }
+.cardImg-container1{
+    background: url("../images/foodburg.PNG") center;
+}
+.cardImg-container2{
+    background: url("../images/stroog.PNG") center;
+}
+.cardImg-container3{
+    background: url("../images/greenHealth.PNG") center;
+}
 .cardImg-container1,
 .cardImg-container2,
 .cardImg-container3{
-    background: url("../images/profile.jpg") center;
     /* background-color: rgba(0,0,0,0.5); */
     background-blend-mode: color-burn;
-    width: 280px;
+    width: 100%;
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
