@@ -111,11 +111,10 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 60vh;
+    height: 500px;
     padding: 50px 15% 0 15%;
     background-color: #ebe8e8;
     border-bottom:  5px solid #eeeeee;
-
 }
 .portfailo-container{
     display: flex;
@@ -128,7 +127,8 @@
 .about-me{
     color: #F9A826;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500;
 }
 .about-passion{
     color: black;
@@ -197,25 +197,22 @@
 }
 /* ---------------------------------- */
 .skills-container{
-    width: 100%;
-    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    /* background-color: rgba(2,0,36); */
+    width: 100%;
+    height: 600px;
+    padding: 50px 15% 0 15%;
     background-color: #ebe8e8;
     border-bottom:  5px solid #eeeeee;
-
     /* background-image: linear-gradient(135deg, rgba(2,0,36,0.8) 0%, rgba(249, 168, 38,0.8) 100%); */
     
 }
 .skill-heading{
-    color: black;
-    font-size: 35px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: capitalize;
+    color: #F9A826;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 .programming-container{
     width:800px;
@@ -223,7 +220,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #F9A826; */
+    margin: 0 auto;
 }
 .langugae-icon{
     width: 32px;
@@ -246,23 +243,38 @@
 }
 .percentage{
     width: 30px;
-    /* height: 30px; */
+    height: 30px;
     text-align: center;
     padding: 8px 5px;
     border-radius: 50%;
     color: white;
-    background-color: #0100ec;
+    /* background-color: #0100ec; */
     font-size: 12px; 
+}
+.per1{
+    background-color: #0fec0f;
+}
+.per2{
+    background-color: #0cbe0c;
+}
+.per3{
+    background-color: #10a110;
+}
+.per4{
+    background-color: #0b940b;
+}
+.per5{
+    background-color: #0c6d0c;
 }
 /* ---------------------------------- */
 .project-container{
     padding: 10px 15%;
     width: 100%;
-    height: 80vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #ebe8e8;
+    background-color: #eeebeb;
     border-bottom:  5px solid #eeeeee;
 }
 .projects{
@@ -274,18 +286,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
     text-align: center;
     width: 280px;
     height: 480px;
     border-radius: 10px;
-    border: 1px solid #aaa;
-    background-color: #ddd;
-    box-shadow: 2px 2px 2px  #aaa;
-    /* position: relative; */
+    background-image: linear-gradient(135deg,#0100ec,#fb36f4);
+    box-shadow: 0 2px 2px 2px rgb(131, 124, 124);
 }
 .cardImg-container1{
-    background: url("../images/foodburg.PNG") ;
+    background: url("../images/foodburg.PNG") center;
 }
 .cardImg-container2{
     background: url("../images/stroog.PNG") center;
@@ -304,59 +313,20 @@
     background-repeat: no-repeat;
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
     border-radius: 10px 10px 0 0;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
 }
-
-.cardImg-container1:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(135deg, rgba(2,0,36,0.8) 0%, rgba(249, 168, 38,0.8) 100%);
-    /* background-image: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(52,175,107,0.8491771708683473) 100%); */
-    opacity: 0.7;
-    border-radius: 5px 5px 0 0;
-}
-.cardImg-container2:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(135deg, rgba(3,3,3,1) 0%, rgba(254,255,0,0.8491771708683473) 100%);
-    opacity: 0.7;
-    border-radius: 5px 5px 0 0;
-}
-.cardImg-container3:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(135deg, rgba(3,3,3,1) 0%, rgba(254,255,0,0.8491771708683473) 100%);
-    opacity: 0.7;
-    border-radius: 5px 5px 0 0;
-}
-
 .card-title{
     color: #F9A826;
     font-size: 20px;
     text-transform: capitalize;
 }
 .card-text{
-    color: black;
+    color: white;
     text-align: justify;
     padding: 5px 10px;
     font-size: 16px;
 }
 .card-link{
-    background-color: rgb(2,0,36);
+    background-color: #F9A826;
     color: white;
     width: 150px;
     text-decoration: none;
@@ -364,27 +334,23 @@
     text-transform: capitalize;
     padding: 10px ;
     border-radius: 10px;
-    border: 1px solid white;
     margin-left: 10px;
     margin-bottom: 20px;
 }
 .card-link:hover{
-    color: rgb(2,0,36);
-    background-color: white;
-    transition: background-color, color 0.5s;
+    background-color: #0100ec;
+    transition: background-color 0.5s;
 }
 /* ------------------------------ */
 .contact-container{
-    /* background-color: rgb(2,0,36); */
     width: 100%;
-    height: 20vh;
+    height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: white;
     background-color: #ebe8e8;
     position: relative;
-    /* border-bottom:  5px solid #eeeeee; */
 }
 .first-contact{
     display: flex;
@@ -396,10 +362,8 @@
     background-color: black;
     border-radius: 10px;
     margin: 0 auto;
-    /* align-items: center; */
     position: absolute;
     top: 20%;
-    /* left: 25%; */
     box-shadow: 3px 3px 3px rgb(2,0,36);
 }
 .second-contact{
@@ -464,6 +428,11 @@
 .social-icon-footer{
     margin: 0 5px;
     cursor: pointer;
+}
+.social-icon-footer:hover{
+    background-color: #0100ec;
+    border-radius: 5px;
+    transition: background-color 0.5s;
 }
 .copy-text{
     color: black;
