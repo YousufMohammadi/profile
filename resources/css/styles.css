@@ -111,9 +111,10 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     padding: 50px 15% 0 15%;
     background-color: #ebe8e8;
+    border-bottom:  5px solid #eeeeee;
 
 }
 .portfailo-container{
@@ -197,13 +198,15 @@
 /* ---------------------------------- */
 .skills-container{
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     /* background-color: rgba(2,0,36); */
-    background-color: #eeeeeee0;
+    background-color: #ebe8e8;
+    border-bottom:  5px solid #eeeeee;
+
     /* background-image: linear-gradient(135deg, rgba(2,0,36,0.8) 0%, rgba(249, 168, 38,0.8) 100%); */
     
 }
@@ -255,11 +258,12 @@
 .project-container{
     padding: 10px 15%;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: black;
+    background-color: #ebe8e8;
+    border-bottom:  5px solid #eeeeee;
 }
 .projects{
     display: flex;
@@ -275,9 +279,9 @@
     width: 280px;
     height: 480px;
     border-radius: 10px;
-    border: 1px solid #F9A826;
-    background-color: rgb(2,0,36);
-    box-shadow: 2px 2px 2px  #F9A826;
+    border: 1px solid #aaa;
+    background-color: #ddd;
+    box-shadow: 2px 2px 2px  #aaa;
     /* position: relative; */
 }
 .cardImg-container1{
@@ -292,7 +296,7 @@
 .cardImg-container1,
 .cardImg-container2,
 .cardImg-container3{
-    /* background-color: rgba(0,0,0,0.5); */
+    background-color: rgba(0,0,0,0.6);
     background-blend-mode: color-burn;
     width: 100%;
     height: 250px;
@@ -304,14 +308,16 @@
     top: 0;
     left: 0; */
 }
-/* .cardImg-container1:after{
+
+.cardImg-container1:after{
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(52,175,107,0.8491771708683473) 100%);
+    background-image: linear-gradient(135deg, rgba(2,0,36,0.8) 0%, rgba(249, 168, 38,0.8) 100%);
+    /* background-image: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(52,175,107,0.8491771708683473) 100%); */
     opacity: 0.7;
     border-radius: 5px 5px 0 0;
 }
@@ -333,18 +339,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* background-image: linear-gradient(135deg,#0100ec,#fb36f4); */
-    /* background-image:linear-gradient(135deg, rgba(3,3,3,1) 0%, rgba(255,0,0,0.8491771708683473) 100%);
+    background-image: linear-gradient(135deg, rgba(3,3,3,1) 0%, rgba(254,255,0,0.8491771708683473) 100%);
     opacity: 0.7;
-    border-radius: 5px 5px 0 0; */
-/* } */ 
+    border-radius: 5px 5px 0 0;
+}
+
 .card-title{
     color: #F9A826;
     font-size: 20px;
     text-transform: capitalize;
 }
 .card-text{
-    color: white;
+    color: black;
     text-align: justify;
     padding: 5px 10px;
     font-size: 16px;
@@ -371,35 +377,55 @@
 .contact-container{
     /* background-color: rgb(2,0,36); */
     width: 100%;
-    height: 50vh;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: white;
-    background-color: #eee;
+    background-color: #ebe8e8;
     position: relative;
+    /* border-bottom:  5px solid #eeeeee; */
 }
 .first-contact{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    height: 200px;
-    width: 50%;
+    height: 100px;
+    width: 60%;
     background-color: black;
     border-radius: 10px;
     margin: 0 auto;
-    align-items: center;
+    /* align-items: center; */
     position: absolute;
     top: 20%;
-    left: 25%;
+    /* left: 25%; */
     box-shadow: 3px 3px 3px rgb(2,0,36);
 }
 .second-contact{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
+    width: 100px;
+    justify-content: space-around;
+    align-items: center;
 
+}
+.second-contact img{
+    width: 32px;
+    height: 32px;
+}
+.email,.phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.email{
+    width: 280px;
+}
+.phone{
+    width: 160px;
 }
 /* ------------------------------ */
 .footer-container{
