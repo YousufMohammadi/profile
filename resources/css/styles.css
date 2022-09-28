@@ -181,7 +181,11 @@
     text-decoration: none;
     text-transform: capitalize;
     font-size: 18px;
-    margin:0 10px;
+    padding:10px 30px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    /* background-color: rgb(2,0,36); */
 }
 .link:hover{
     color: gray;
@@ -222,7 +226,7 @@
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-color: #ebe8e8;
     border-bottom:  5px solid #eeeeee;    
 }
@@ -235,7 +239,7 @@
     text-align: center;
 }
 .skills-catagory{
-    width: 30%;
+    width: 50%;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -358,10 +362,34 @@
     background: url("../css/img/react.png") center;
 }
 .skill-cardImg-container7{
-    background: url("../css/img/php.png") center;
+    background: url("../css/img/apollo.svg") center;
 }
 .skill-cardImg-container8{
+    background: url("../css/img/reactNative.png") center;
+}
+.skill-cardImg-container9{
+    background: url("../css/img/php.png") center;
+}
+.skill-cardImg-container10{
     background: url("../css/img/nodejs.png") center;
+}
+.skill-cardImg-container11{
+    background: url("../css/img/mongodb.svg") center;
+}
+.skill-cardImg-container12{
+    background: url("../css/img/mysql.png") center;
+}
+.skill-cardImg-container13{
+    background: url("../css/img/graphql.png") center;
+}
+.skill-cardImg-container14{
+    background: url("../css/img/github.png") center;
+}
+.skill-cardImg-container15{
+    background: url("../css/img/apollo.svg") center;
+}
+.skill-cardImg-container16{
+    background: url("../css/img/reactNative.png") center;
 }
 .skill-cardImg-container1,
 .skill-cardImg-container2,
@@ -370,7 +398,15 @@
 .skill-cardImg-container5,
 .skill-cardImg-container6,
 .skill-cardImg-container7,
-.skill-cardImg-container8
+.skill-cardImg-container8,
+.skill-cardImg-container9,
+.skill-cardImg-container10,
+.skill-cardImg-container11,
+.skill-cardImg-container12,
+.skill-cardImg-container13,
+.skill-cardImg-container14,
+.skill-cardImg-container15,
+.skill-cardImg-container16
 {
     /* background-color: rgba(0,0,0,0.6);
     background-blend-mode: color-burn; */
@@ -402,6 +438,12 @@
     padding: 10px ;
     margin: 0 auto;
     border-radius: 10px;
+}
+.skill-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .skill-card-link:hover{
     background-color: #0100ec;
