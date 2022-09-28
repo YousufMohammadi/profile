@@ -7,19 +7,24 @@
     width: 100%;
 }
 .header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
     height: 100vh;
-    padding: 20px 15%;
     background: rgb(2,0,36);
     background-image: linear-gradient(135deg,#0100ec,#fb36f4);
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,175,107,0.8491771708683473) 100%, rgba(0,212,255,1) 100%); */
 }
 .nav-container{
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     align-content: center; 
+    margin: 0 auto;
+    padding-top: 10px;
 }
 .logo{
     width: 100px;
@@ -33,7 +38,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
 }
 .link-container a{
     color: white;
@@ -67,13 +72,14 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
 }
 .status-par{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width:500px;
+    width:1000px;
     height: 260px;
 }
 .par{
@@ -98,7 +104,7 @@
     transition: background-color 0.5s;
 }
 .programming-img{
-    width: 600px;
+    width: 400px;
     height: 450px;
     /* border: 2px solid #F9A826; */
     /* background-color: #F9A826; */
@@ -118,14 +124,16 @@
 .portfailo-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width:350px;
-    height:400px;
+    height:380px;
 }
 .profile-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
 }
 .about-me{
     color: #F9A826;
@@ -159,8 +167,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-    width: 400px;
+    width:350px;
     height:400px;
+    text-align: center;
 }
 .portfailo-link{
     display: flex;
@@ -181,12 +190,13 @@
 .portfailo-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 300px;
-    height: 200px;
+    justify-content: space-around;
+    width: 350px;
+    height: 240px;
     font-size: 16px;
     color: gray;
     text-align: justify;
+    /* align-self: center; */
 }
 .cv-link{
     color: #F9A826;
@@ -200,6 +210,12 @@
     color: white;
     transition: background-color 0.5s;
 }
+/* .active-link{
+    background-color: rgb(2,0,36);
+    padding: 0 20px;
+    border-radius: 10px;
+    color: white;
+} */
 /* ---------------------------------- */
 .skills-container{
     display: flex;
@@ -223,32 +239,32 @@
     height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 .language-container{
     width:70%;
-    height: 400px;
+    height: 600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     margin: 0 auto;
-    background-color: #DDD;
+    /* background-color: #ddd; */
 }
 #skill-link1,
 #skill-link2,
 #skill-link3{
-    width:100%;
-    height: 400px;
+    width:80%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     margin: 0 auto;
 }
 .programming-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 50%;
@@ -271,7 +287,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 30%;
+    /* background-color: #F9A826; */
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 2px ;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
 }
 .percentage{
     width: 30px;
@@ -281,22 +306,106 @@
     border-radius: 50%;
     color: white;
     /* background-color: #0100ec; */
-    font-size: 12px; 
+    font-size: 9px; 
+    /* border: 2px solid black; */
+
 }
 .per1{
-    background-color: #0fec0f;
+    background-color: #00ff00;
 }
 .per2{
-    background-color: #0cbe0c;
+    background-color: #00cc00;
 }
 .per3{
-    background-color: #10a110;
+    background-color: #00b300;
 }
 .per4{
-    background-color: #0b940b;
+    background-color: #009900;
 }
 .per5{
-    background-color: #0c6d0c;
+    background-color: #006600;
+}
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    /* background-color:rgb(2,0,36); */
+    background-color: #e4e4e4;
+    /* background-color: #22c1c3; */
+    /* background-image: linear-gradient(135deg,#0100ec,#fb36f4); */
+    box-shadow: 0 1px 2px 1px rgb(131, 124, 124);
+}
+.skill-cardImg-container1{
+    background: url("../css/img/html-5.png") center;
+}
+.skill-cardImg-container2{
+    background: url("../css/img/css-3.png") center;
+}
+.skill-cardImg-container3{
+    background: url("../css/img/bootstrap.png") center;
+}
+.skill-cardImg-container4{
+    background: url("../css/img/sass.png") center;
+}
+.skill-cardImg-container5{
+    background: url("../css/img/js.png") center;
+}
+.skill-cardImg-container6{
+    background: url("../css/img/react.png") center;
+}
+.skill-cardImg-container7{
+    background: url("../css/img/php.png") center;
+}
+.skill-cardImg-container8{
+    background: url("../css/img/nodejs.png") center;
+}
+.skill-cardImg-container1,
+.skill-cardImg-container2,
+.skill-cardImg-container3,
+.skill-cardImg-container4,
+.skill-cardImg-container5,
+.skill-cardImg-container6,
+.skill-cardImg-container7,
+.skill-cardImg-container8
+{
+    /* background-color: rgba(0,0,0,0.6);
+    background-blend-mode: color-burn; */
+    width: 100%;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+.skill-card-title{
+    color: rgb(2,0,36);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.skill-card-text{
+    color: white;
+    text-align: justify;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.skill-card-link{
+    background-color: #F9A826;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px ;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.skill-card-link:hover{
+    background-color: #0100ec;
+    transition: background-color 0.5s;
 }
 /* ---------------------------------- */
 .project-container{

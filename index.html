@@ -11,12 +11,14 @@
 
 function displayAboutMe() {
    document.getElementById('div-link1').style.display= "flex"
+//    document.getElementsByClassName('active-link')[0].style.backgroundColor="rgb(2,0,36)"
    document.getElementById('div-link2').style.display= "none"
    document.getElementById('div-link3').style.display= "none"
     }
 function displayExperiance() {
    document.getElementById('div-link1').style.display= "none"
    document.getElementById('div-link2').style.display= "flex"
+   document.getElementsByClassName('active-link')[1].style.backgroundColor="rgb(2,0,36)"
    document.getElementById('div-link3').style.display= "none"     
     }
 function displaySkills() {
@@ -76,9 +78,9 @@ function displayTools() {
                 about me
             </span>
             <div class="portfailo-link">
-                <a href="#aboutme" class="link" id="link1" onclick="displayAboutMe()">bio</a>
-                <a href="#aboutme" class="link" id="link3" onclick="displaySkills()">education</a>
-                <a href="#aboutme" class="link" id="link2" onclick="displayExperiance()">experience</a>
+                <a href="#aboutme" class="link active-link" id="link1" onclick="displayAboutMe()">bio</a>
+                <a href="#aboutme" class="link active-link" id="link3" onclick="displaySkills()">education</a>
+                <a href="#aboutme" class="link active-link" id="link2" onclick="displayExperiance()">experience</a>
             </div>
             <div class="profile-container">
             <div class="portfailo-container">
@@ -116,124 +118,276 @@ function displayTools() {
             </div>
             <div class="language-container">
              <div id="skill-link1">   
-            <div class="programming-container" >
-                <img src="resources/css/img/html-5.png" alt="html" class="langugae-icon">
-                <span class="programming-name">html</span>
-                <div class="language-percentage">
+                <div class="skill-card">
+                    <div class="skill-cardImg-container1"></div>
+                    <span class="skill-card-title">foodBurg</span>
+                    <div class="language-percentage">
                     <span class="percentage per1"></span>
                     <span class="percentage per2"></span>
                     <span class="percentage per3"></span>
+                    <span class="percentage per4">90%</span>
+                    <span class="percentage per5"></span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-cardImg-container2"></div>
+                    <span class="skill-card-title">foodBurg</span>
+                    <div class="language-percentage">
+                    <span class="percentage per1"></span>
+                    <span class="percentage per2"></span>
+                    <span class="percentage per3">30%</span>
                     <span class="percentage per4"></span>
                     <span class="percentage per5"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="programming-container">
-                <img src="resources/css/img/css-3.png" alt="html" class="langugae-icon">
-                <span class="programming-name">css</span>
-                <div class="language-percentage">
-
+                <div class="skill-card">
+                    <div class="skill-cardImg-container3"></div>
+                    <span class="skill-card-title">foodBurg</span>
+                    <div class="language-percentage">
+                    <span class="percentage per1"></span>
+                    <span class="percentage per2"></span>
+                    <span class="percentage per3">30%</span>
+                    <span class="percentage per4"></span>
+                    <span class="percentage per5"></span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-cardImg-container4"></div>
+                    <span class="skill-card-title">foodBurg</span>
+                    <div class="language-percentage">
+                    <span class="percentage per1"></span>
+                    <span class="percentage per2"></span>
+                    <span class="percentage per3">30%</span>
+                    <span class="percentage per4"></span>
+                    <span class="percentage per5"></span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-cardImg-container4"></div>
+                    <span class="skill-card-title">foodBurg</span>
+                    <div class="language-percentage">
                     <span class="percentage per1"></span>
                     <span class="percentage per2"></span>
                     <span class="percentage per3"></span>
-                    <span class="percentage per4"></span>
+                    <span class="percentage per4">90%</span>
                     <span class="percentage per5"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="programming-container">
-                <img src="resources/css/img/bootstrap.png" alt="html" class="langugae-icon">
-                <span class="programming-name">bootstrap</span>
-                <div class="language-percentage">
+                <div class="skill-card">
+                    <div class="skill-cardImg-container6"></div>
+                    <span class="skill-card-title">foodBurg</span>
+                    <div class="language-percentage">
                     <span class="percentage per1"></span>
                     <span class="percentage per2"></span>
-                    <span class="percentage per3"></span>
+                    <span class="percentage per3">30%</span>
                     <span class="percentage per4"></span>
                     <span class="percentage per5"></span>
-
+                    </div>
                 </div>
-            </div>
-            <div class="programming-container">
-                <img src="resources/css/img/sass.png" alt="html" class="langugae-icon">
-                <span class="programming-name">sass</span>
-                <div class="language-percentage">
-
+                <div class="skill-card">
+                    <div class="skill-cardImg-container7"></div>
+                    <span class="skill-card-title">foodBurg</span>
+                    <div class="language-percentage">
                     <span class="percentage per1"></span>
                     <span class="percentage per2"></span>
-                    <span class="percentage per3"></span>
+                    <span class="percentage per3">30%</span>
                     <span class="percentage per4"></span>
                     <span class="percentage per5"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="programming-container">
-                <img src="resources/css/img/js.png" alt="html" class="langugae-icon">
-                <span class="programming-name">javascript</span>
-                <div class="language-percentage">
-
+                <div class="skill-card">
+                    <div class="skill-cardImg-container8"></div>
+                    <span class="skill-card-title">foodBurg</span>
+                    <div class="language-percentage">
                     <span class="percentage per1"></span>
                     <span class="percentage per2"></span>
-                    <span class="percentage per3"></span>
+                    <span class="percentage per3">30%</span>
                     <span class="percentage per4"></span>
                     <span class="percentage per5"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="programming-container">
-                <img src="resources/css/img/react.png" alt="html" class="langugae-icon">
-                <span class="programming-name">react</span>
-                <div class="language-percentage">
-                    <span class="percentage per1"></span>
-                    <span class="percentage per2"></span>
-                    <span class="percentage per3"></span>
-                    <span class="percentage per4"></span>
-                    <span class="percentage per5"></span>
-                </div>
-            </div>
            </div>
            <div id="skill-link2" style="display: none;">
-            <div class="programming-container" >
-                <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
-                <span class="programming-name">node</span>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
                 <div class="language-percentage">
-                    <span class="percentage per1"></span>
-                    <span class="percentage per2"></span>
-                    <span class="percentage per3"></span>
-                    <span class="percentage per4"></span>
-                    <span class="percentage per5"></span>
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3"></span>
+                <span class="percentage per4">90%</span>
+                <span class="percentage per5"></span>
                 </div>
             </div>
-            <div class="programming-container" >
-                <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
-                <span class="programming-name">mysql</span>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
                 <div class="language-percentage">
-                    <span class="percentage per1"></span>
-                    <span class="percentage per2"></span>
-                    <span class="percentage per3"></span>
-                    <span class="percentage per4"></span>
-                    <span class="percentage per5"></span>
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
                 </div>
             </div>
-            <div class="programming-container" >
-                <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
-                <span class="programming-name">sql server</span>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
                 <div class="language-percentage">
-                    <span class="percentage per1"></span>
-                    <span class="percentage per2"></span>
-                    <span class="percentage per3"></span>
-                    <span class="percentage per4"></span>
-                    <span class="percentage per5"></span>
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
                 </div>
             </div>
-            <div class="programming-container" >
-                <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
-                <span class="programming-name">php</span>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
                 <div class="language-percentage">
-                    <span class="percentage per1"></span>
-                    <span class="percentage per2"></span>
-                    <span class="percentage per3"></span>
-                    <span class="percentage per4"></span>
-                    <span class="percentage per5"></span>
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div> 
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
                 </div>
             </div>
            </div>
+           <div id="skill-link3" style="display: none;">
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3"></span>
+                <span class="percentage per4">90%</span>
+                <span class="percentage per5"></span>
+                </div>
             </div>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div> 
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-cardImg-container1"></div>
+                <span class="skill-card-title">foodBurg</span>
+                <div class="language-percentage">
+                <span class="percentage per1"></span>
+                <span class="percentage per2"></span>
+                <span class="percentage per3">30%</span>
+                <span class="percentage per4"></span>
+                <span class="percentage per5"></span>
+                </div>
+            </div>
+           </div>
+           </div>
         </div>
         <div class="project-container" id="myWorks">
             <span class="about-me" >
