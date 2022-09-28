@@ -57,21 +57,22 @@ function displaySkills() {
             </div>
         </div>
         <div class="about-container" id="aboutme">
-                <div class="portfailo-container">
-                    <span class="about-me">
-                        about me
-                    </span>
-                    <span class="about-passion">a little about me and my passion</span>
-                    <div class="image-container">
-                        <img src="resources/images/profile.jpg" alt="my-image" class="my-image">
-                    </div>
+            <span class="about-me">
+                about me
+            </span>
+            <div class="portfailo-link">
+                <a href="#aboutme" class="link" id="link1" onclick="displayAboutMe()">bio</a>
+                <a href="#aboutme" class="link" id="link3" onclick="displaySkills()">education</a>
+                <a href="#aboutme" class="link" id="link2" onclick="displayExperiance()">experience</a>
+            </div>
+            <div class="profile-container">
+            <div class="portfailo-container">
+                <span class="about-passion">a little about me and my passion</span>
+                <div class="image-container">
+                    <img src="resources/images/profile.jpg" alt="my-image" class="my-image">
                 </div>
+            </div>
             <div class="portfailo-link__container">
-                <div class="portfailo-link">
-                    <a href="#aboutme" class="link" id="link1" onclick="displayAboutMe()">about me</a>
-                    <a href="#aboutme" class="link" id="link3" onclick="displaySkills()">education</a>
-                    <a href="#aboutme" class="link" id="link2" onclick="displayExperiance()">experience</a>
-                </div>
                 <div class="portfailo-text" id="div-link1">
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum molestias vitae a iure velit. Ea similique perferendis nihil eveniet provident?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, dicta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptate?</span>
                     <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, sint.</span>
@@ -89,9 +90,16 @@ function displaySkills() {
                     <a href="#myWorks" class="cv-link">my works</a>
                 </div>
             </div>
+            </div>
         </div>
         <div class="skills-container" id="skills">
             <span class="skill-heading">skills</span>
+            <div class="skills-catagory">
+                <a href="#" class="link">front end</a>
+                <a href="#" class="link">back end</a>
+                <a href="#" class="link">tools</a>
+            </div>
+            <div class="language-container">
             <div class="programming-container">
                 <img src="resources/css/img/html-5.png" alt="html" class="langugae-icon">
                 <span class="programming-name">html</span>
@@ -101,7 +109,6 @@ function displaySkills() {
                     <span class="percentage per3"></span>
                     <span class="percentage per4"></span>
                     <span class="percentage per5"></span>
-
                 </div>
             </div>
             <div class="programming-container">
@@ -140,7 +147,7 @@ function displaySkills() {
                     <span class="percentage per5"></span>
                 </div>
             </div>
-            <div class="programming-container">
+            <!-- <div class="programming-container">
                 <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
                 <span class="programming-name">node</span>
                 <div class="language-percentage">
@@ -151,7 +158,7 @@ function displaySkills() {
                     <span class="percentage per5"></span>
 
                 </div>
-            </div>
+            </div> -->
             <div class="programming-container">
                 <img src="resources/css/img/js.png" alt="html" class="langugae-icon">
                 <span class="programming-name">javascript</span>
@@ -175,8 +182,8 @@ function displaySkills() {
                     <span class="percentage per5"></span>
                 </div>
             </div>
+            </div>
         </div>
-
         <div class="project-container" id="myWorks">
             <span class="about-me" >
                 <span>my works</span>
@@ -205,6 +212,7 @@ function displaySkills() {
             </div>
         </div>
         <div class="contact-container" id="contact">
+            <span class="skill-heading">contact me</span>
             <div class="first-contact">
                 <span class="email">
                   <img src="resources/css/img/mail.png" alt="email">
