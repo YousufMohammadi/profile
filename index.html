@@ -24,6 +24,21 @@ function displaySkills() {
    document.getElementById('div-link2').style.display= "none"
    document.getElementById('div-link3').style.display= "flex"     
     }
+function displayFrontEnd() {
+   document.getElementById('skill-link1').style.display= "flex"
+   document.getElementById('skill-link2').style.display= "none"
+   document.getElementById('skill-link3').style.display= "none"
+    }
+function displayBackEnd() {
+   document.getElementById('skill-link1').style.display= "none"
+   document.getElementById('skill-link2').style.display= "flex"
+   document.getElementById('skill-link3').style.display= "none"     
+    }
+function displayTools() {
+   document.getElementById('skill-link1').style.display= "none"
+   document.getElementById('skill-link2').style.display= "none"
+   document.getElementById('skill-link3').style.display= "flex"     
+    }
 </script>  
 
 </head>
@@ -95,12 +110,13 @@ function displaySkills() {
         <div class="skills-container" id="skills">
             <span class="skill-heading">skills</span>
             <div class="skills-catagory">
-                <a href="#" class="link">front end</a>
-                <a href="#" class="link">back end</a>
-                <a href="#" class="link">tools</a>
+                <a href="#skills" class="link" onclick="displayFrontEnd()">front end</a>
+                <a href="#skills" class="link" onclick="displayBackEnd()">back end</a>
+                <a href="#skills" class="link" onclick="displayTools()">tools</a>
             </div>
             <div class="language-container">
-            <div class="programming-container">
+             <div id="skill-link1">   
+            <div class="programming-container" >
                 <img src="resources/css/img/html-5.png" alt="html" class="langugae-icon">
                 <span class="programming-name">html</span>
                 <div class="language-percentage">
@@ -147,18 +163,6 @@ function displaySkills() {
                     <span class="percentage per5"></span>
                 </div>
             </div>
-            <!-- <div class="programming-container">
-                <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
-                <span class="programming-name">node</span>
-                <div class="language-percentage">
-                    <span class="percentage per1"></span>
-                    <span class="percentage per2"></span>
-                    <span class="percentage per3"></span>
-                    <span class="percentage per4"></span>
-                    <span class="percentage per5"></span>
-
-                </div>
-            </div> -->
             <div class="programming-container">
                 <img src="resources/css/img/js.png" alt="html" class="langugae-icon">
                 <span class="programming-name">javascript</span>
@@ -182,6 +186,53 @@ function displaySkills() {
                     <span class="percentage per5"></span>
                 </div>
             </div>
+           </div>
+           <div id="skill-link2" style="display: none;">
+            <div class="programming-container" >
+                <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
+                <span class="programming-name">node</span>
+                <div class="language-percentage">
+                    <span class="percentage per1"></span>
+                    <span class="percentage per2"></span>
+                    <span class="percentage per3"></span>
+                    <span class="percentage per4"></span>
+                    <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="programming-container" >
+                <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
+                <span class="programming-name">mysql</span>
+                <div class="language-percentage">
+                    <span class="percentage per1"></span>
+                    <span class="percentage per2"></span>
+                    <span class="percentage per3"></span>
+                    <span class="percentage per4"></span>
+                    <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="programming-container" >
+                <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
+                <span class="programming-name">sql server</span>
+                <div class="language-percentage">
+                    <span class="percentage per1"></span>
+                    <span class="percentage per2"></span>
+                    <span class="percentage per3"></span>
+                    <span class="percentage per4"></span>
+                    <span class="percentage per5"></span>
+                </div>
+            </div>
+            <div class="programming-container" >
+                <img src="resources/css/img/nodejs.png" alt="html" class="langugae-icon">
+                <span class="programming-name">php</span>
+                <div class="language-percentage">
+                    <span class="percentage per1"></span>
+                    <span class="percentage per2"></span>
+                    <span class="percentage per3"></span>
+                    <span class="percentage per4"></span>
+                    <span class="percentage per5"></span>
+                </div>
+            </div>
+           </div>
             </div>
         </div>
         <div class="project-container" id="myWorks">
@@ -197,7 +248,7 @@ function displaySkills() {
                 </div>
                 <div class="card">
                     <div class="cardImg-container2"></div>
-                    <span class="card-title">strog</span>
+                    <span class="card-title">stroog</span>
                     <span class="card-text">Stroog is a furniture website that you can see new sofa and chairs also can buy if you would like them.</span>
                     <a href="https://github.com/YousufMohammadi/stroog" class="card-link">see project</a>
                 </div>
@@ -243,9 +294,9 @@ function displaySkills() {
                 <a href="#contact">contanct</a>
             </div>
             <div class="social-container-footer">
-                <a href="#"><img src="resources/css/img/001-facebook.png" alt="facebook" class="social-icon-footer"></a>
-                <a href="#"><img src="resources/css/img/005-twitter.png" alt="twitter" class="social-icon-footer"></a>
-                <a href="#"><img src="resources/css/img/007-linkedin.png" alt="linked in" class="social-icon-footer"></a>
+                <a href="https://www.facebook.com/yousuf.mohammadi.71"><img src="resources/css/img/001-facebook.png" alt="facebook" class="social-icon-footer"></a>
+                <a href="https://twitter.com/Mh_Yousuf2021"><img src="resources/css/img/005-twitter.png" alt="twitter" class="social-icon-footer"></a>
+                <a href="https://www.linkedin.com/in/yousuf-mohammadi-4114b3179/"><img src="resources/css/img/007-linkedin.png" alt="linked in" class="social-icon-footer"></a>
             </div>
             <span class="copy-text">Copyright&copy;Yousuf Mohammadi 2022</span>
         </div>
