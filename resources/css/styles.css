@@ -14,7 +14,6 @@
     height: 100vh;
     background: rgb(2,0,36);
     background-image: linear-gradient(135deg,#0100ec,#fb36f4);
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,175,107,0.8491771708683473) 100%, rgba(0,212,255,1) 100%); */
 }
 .nav-container{
     width: 60%;
@@ -32,13 +31,12 @@
     border-left: 2px solid #F9A826;
     border-bottom: 2px solid #F9A826;
     border-radius: 10px;
-    /* box-shadow: 2px 2px 2px #F9A826; */
 }
 .link-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
 }
 .link-container a{
     color: white;
@@ -111,13 +109,66 @@
     padding: 0 5px;
     border-radius: 10px;  
 }
+@media(max-width:1200px){
+    .par{
+        font-size: 25px;
+    }
+    .programming-img{
+        width: 350px;
+        height: 400px;
+    }
+}
+
+@media(max-width:1100px){
+    .par{
+        font-size: 20px;
+    }
+    .programming-img{
+        width: 320px;
+        height: 380px;
+    }
+    .link-container a{
+        font-size: 18px;
+    }
+    .portfailo-link__container{
+        width:320px;
+        height:400px;
+    }
+    .portfailo-text{
+        width: 80%;
+        height: 240px;
+        font-size: 12px;
+    }
+}
+@media(max-width:910px){
+    .par{
+        font-size: 20px;
+    }
+    .programming-img{
+        width: 300px;
+        height: 360px;
+    }
+    .link-container a{
+        font-size: 17px;
+    } 
+}
+@media(max-width:860px){
+    .link-container a{
+        font-size: 16px;
+    }
+    .programming-img{
+        width: 280px;
+        height: 350px;
+    }
+     
+}
 /* -------------------------------- */
 .about-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    height: 600px;
+    height: 700px;
     background-color: #ebe8e8;
     border-bottom:  5px solid #eeeeee;
 }
@@ -132,7 +183,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
+    height: 450px;
     margin: 0 auto;
 }
 .about-me{
@@ -165,10 +217,10 @@
 .portfailo-link__container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     width:350px;
-    height:400px;
+    height:360px;
     text-align: center;
 }
 .portfailo-link{
@@ -451,7 +503,6 @@
 }
 /* ---------------------------------- */
 .project-container{
-    padding: 10px 15%;
     width: 100%;
     height: 700px;
     display: flex;
@@ -464,6 +515,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
 }
 .card{
     display: flex;
@@ -476,6 +529,40 @@
     background-image: linear-gradient(135deg,#0100ec,#fb36f4);
     box-shadow: 0 2px 2px 2px rgb(131, 124, 124);
 }
+@media(max-width:1120px){
+    .skill-card{
+        width: 130px;
+        height: 250px;
+    }
+}
+@media (max-width:1220px) {
+  .card{
+    width: 260px;
+    height: 470px;
+}  
+}
+@media (max-width:1180px) {
+    .card{
+      width: 240px;
+      height: 460px;
+  }  
+  .skill-card{
+      width: 140px;
+      height: 240px;
+  }
+  }
+  @media (max-width:1090px) {
+    .card{
+      width: 220px;
+      height: 440px;
+  }  
+  }
+  @media (max-width:970px) {
+    .card{
+      width: 200px;
+      height: 400px;
+  }  
+  }
 .cardImg-container1{
     background: url("../images/foodburg.PNG") center;
 }
