@@ -968,6 +968,7 @@
         }
         .email{
             text-align: center; 
+            margin: 0 auto;
         }
         .link-container-footer{
             width: 70%;
