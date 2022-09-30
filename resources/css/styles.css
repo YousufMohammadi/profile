@@ -892,6 +892,9 @@
             justify-content: space-around;
             align-items: center;
         }
+        .email{
+            width: 100%;   
+        }
         .link-container-footer{
             width: 70%;
         }
