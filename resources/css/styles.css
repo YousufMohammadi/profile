@@ -679,6 +679,9 @@
     .about-me{
         font-size: 50px;
     }
+    .skill-heading{
+        font-size: 50px;
+    }
 }
 @media(max-width:1020px){
     .par{
@@ -686,6 +689,9 @@
         font-weight: 400;
     }
     .about-me{
+        font-size: 45px;
+    }
+    .skill-heading{
         font-size: 45px;
     }
 }
@@ -795,6 +801,9 @@
     .about-me{
         font-size: 30px;
     }
+    .skill-heading{
+        font-size: 30px;
+    }
     .profile-container{
         display: flex;
         flex-direction: column;
@@ -853,6 +862,9 @@
         .about-me{
             font-size: 20px;
         }
+        .skill-heading{
+            font-size: 20px;
+        }
         .portfailo-link__container{
             height:400px;
         }
@@ -876,8 +888,13 @@
             width: 90%;
         }
         .about-me{
-            font-size: 20px;
+            font-size: 18px;
             width: 400px;
+        }
+        .skill-heading{
+            font-size: 18px;
+            width: 400px;
+
         }
         .cv-link{
             width: 150px;
