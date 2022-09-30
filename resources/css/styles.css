@@ -703,6 +703,11 @@
     }
 }
 @media(max-width:1020px){
+    .link{
+        font-size: 16px;
+        padding:10px 15px;
+        width: 130px;
+    }
     .card{
         width: 210px;
         height: 410px;
@@ -941,6 +946,11 @@
         }
     }
     @media(max-width:610px){
+        .link{
+            font-size: 14px;
+            padding:10px 10px;
+            width: 130px;
+        }
         .project-container{
             width: 100%;
             height: 1000px;
@@ -1009,6 +1019,11 @@
       
     }
     @media(max-width:580px){
+        .link{
+            font-size: 13px;
+            padding:10px 10px;
+            width: 130px;
+        }
         .profile-container{
             display: flex;
             flex-direction: column;
