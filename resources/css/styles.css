@@ -377,7 +377,7 @@
     .profile-container{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 70%;
         height: 740px;
         margin: 0 auto;
@@ -408,7 +408,7 @@
     }
     .portfailo-container{
         width:60%;
-        height:360px;
+        height:340px;
         margin: 0 auto;
     }
     .image-container{
