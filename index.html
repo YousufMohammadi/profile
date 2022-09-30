@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="resources/css/styles.css">
     <title>Home</title>
 <script>
-
+function collapsHeader(){
+   var x = document.getElementById("link-container");
+   if (x.style.display==="flex") {
+    x.style.display="none"    
+   }else{
+    x.style.display="flex"
+   }
+}
 function displayAboutMe() {
    document.getElementById('div-link1').style.display= "flex"
    document.getElementById('div-link2').style.display= "none"
@@ -21,8 +28,8 @@ function displayAboutMe() {
     document.getElementById('div-link2').style.display= "none"
     document.getElementById('div-link3').style.display= "flex"    
     document.getElementById('link1').style.backgroundColor="#ebe8e8"
-   document.getElementById('link2').style.backgroundColor="rgb(2,0,36)"
-   document.getElementById('link3').style.backgroundColor="#ebe8e8" 
+    document.getElementById('link2').style.backgroundColor="rgb(2,0,36)"
+    document.getElementById('link3').style.backgroundColor="#ebe8e8" 
     }
    function displayExperiance() {
    document.getElementById('div-link1').style.display= "none"
@@ -57,13 +64,18 @@ function displayTools() {
    document.getElementById('skills-link3').style.backgroundColor="rgb(2,0,36)"    
     }
 </script>  
-
 </head>
 <body>
     <div class="home-container">
         <div class="header-container">
             <div class="nav-container">
-                <img src="resources/css/img/logo.jpg" alt="My-logo" class="logo">
+                <div id="mobile-navbar">
+                    <img src="resources/css/img/logo.jpg" alt="My-logo" class="logo">
+                <a href="javascript:void(0);" class="navigation-icon" onclick="collapsHeader()">
+                    <img src="resources/css/img/navigation.png" alt="navigation">
+                </a>
+                </div>
+                <div id="link-container">
                 <div class="link-container">
                     <a href="index.html">home</a>
                     <a href="#aboutme">about me</a>
@@ -77,6 +89,8 @@ function displayTools() {
                     <a href="https://www.linkedin.com/in/yousuf-mohammadi-4114b3179/"><img src="resources/css/img/007-linkedin.png" alt="linked in" class="social-icon"></a>
                     <a href="https://github.com/YousufMohammadi"><img src="resources/css/img/002-github.png" alt="linked in" class="social-icon"></a>
                 </div>
+                </div>
+                
             </div>
             <div class="status-container">
                 <div class="status-par">
@@ -332,9 +346,7 @@ function displayTools() {
                     <span class="card-title">flex</span>
                     <span class="card-text">Flex is a simple design about header and card that how we can use flex to making card.</span>
                     <a href="https://github.com/YousufMohammadi/stoorg" class="card-link">see project</a>
-            
             </div>
-                
             </div>
         </div>
         <div class="contact-container" id="contact">
@@ -352,11 +364,9 @@ function displayTools() {
                     <a href="https://t.me/Mh_Yousuf">
                       <img src="resources/css/img/telegram.png" alt=""> 
                     </a>
-                  <!-- <span>telegram</span> -->
                   <a href="https://wa.me/93790883362">
                     <img src="resources/css/img/whatsapp.png" alt=""> 
                   </a>
-                  <!-- <span>whatsapp</span> -->
                 </div>
             </div>
         </div>
@@ -372,6 +382,7 @@ function displayTools() {
                 <a href="https://www.facebook.com/yousuf.mohammadi.71"><img src="resources/css/img/001-facebook.png" alt="facebook" class="social-icon-footer"></a>
                 <a href="https://twitter.com/Mh_Yousuf2021"><img src="resources/css/img/005-twitter.png" alt="twitter" class="social-icon-footer"></a>
                 <a href="https://www.linkedin.com/in/yousuf-mohammadi-4114b3179/"><img src="resources/css/img/007-linkedin.png" alt="linked in" class="social-icon-footer"></a>
+                <a href="https://github.com/YousufMohammadi"><img src="resources/css/img/002-github.png" alt="linked in" class="social-icon"></a>
             </div>
             <span class="copy-text">Copyright&copy;Yousuf Mohammadi 2022</span>
         </div>
