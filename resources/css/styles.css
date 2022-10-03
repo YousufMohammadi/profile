@@ -35,16 +35,23 @@
 }
 
 .logo{
-    width: 100px;
-    height: 70px;
-    border-left: 2px solid #F9A826;
-    border-bottom: 2px solid #F9A826;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    align-self: center;
+    background-color:#ddd;
     border-radius: 10px;
+    padding: 3px 5px;
+    /* border: 2px solid #F9A826; */
+    /* border-left: 2px solid #F9A826; */
+    /* border-bottom: 2px solid #F9A826; */
+    /* border-radius: 10px; */
 }
 .link-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 60%;
     /* background-color: red; */
 }
@@ -63,6 +70,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-self: center;
+    margin-top: 10px;
     /* background-color: #009900; */
     width: 30%;
 }
@@ -200,6 +209,7 @@
 }
 .link{
     color: #F9A826;
+    background-color: #ddd;
     text-decoration: none;
     text-transform: capitalize;
     font-size: 18px;
@@ -330,20 +340,12 @@
     /* border: 2px solid black; */
 
 }
-.per1{
-    background-color: #00ff00;
+.empty{
+    background-color: #bbb;
 }
-.per2{
-    background-color: #00cc00;
-}
-.per3{
-    background-color: #00b300;
-}
-.per4{
-    background-color: #009900;
-}
-.per5{
-    background-color: #006600;
+.fill{
+    /* background-color: #0100ec; */
+    background-image: linear-gradient(135deg,#0100ec,#fb36f4);
 }
 .skill-card{
     display: flex;
@@ -646,11 +648,17 @@
 }
 @media(max-width:1200px){ 
     .logo{
-        width: 80px;
-        height: 60px;
+        width:100px;
+        /* height: 60px; */
     } 
+    .logo{
+        margin-bottom: 10px;
+    }
+    .link-container{
+        margin: 0 auto;
+    }
     .link-container a{
-        font-size: 18px;
+        font-size: 17px;
         margin-right: 2px;
     }
     .link-container-footer a{
