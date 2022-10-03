@@ -217,6 +217,7 @@
     width: 150px;
     text-align: center;
     border-radius: 10px;
+    background-color: #ddd;
     /* background-color: rgb(2,0,36); */
 }
 .link:hover{
@@ -732,7 +733,11 @@
     .about-me{
         font-size: 45px;
     letter-spacing: 15px;
-
+    }
+    .about-passion{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
     }
     .skill-heading{
         font-size: 45px;
@@ -930,6 +935,11 @@
         width: 60%;
     }
     @media(max-width:750px){
+        .link{
+            font-size: 13px;
+            padding:10px 10px;
+            width: 110px;
+        }
     #skill-link1,
     #skill-link2,
     #skill-link3{
@@ -1008,11 +1018,6 @@
         .skill-card{
             margin: 0 auto;
         }
-        .link{
-            font-size: 14px;
-            padding:10px 10px;
-            width: 130px;
-        }
         .project-container{
             width: 100%;
             height: 1000px;
@@ -1078,13 +1083,26 @@
         .link-container-footer{
             width: 80%;
         }
+        .image-container{
+            width:100%;
+            height: 100%;
+            padding:0 0 20px 10px;
+            border-left: 3px solid #F9A826;
+            border-bottom: 3px solid #F9A826;
+            border-bottom-left-radius: 10px;
+        }
+        .my-image{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;  
+        }
       
     }
     @media(max-width:580px){
         .link{
-            font-size: 13px;
+            font-size: 12px;
             padding:10px 10px;
-            width: 130px;
+            width: 80px;
         }
         .profile-container{
             display: flex;
@@ -1111,4 +1129,23 @@
         }
     }
     
+    
+}
+
+@media(max-width:400px){
+    .programming-img{
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+        padding: 0 5px;
+        border-radius: 10px;  
+    } 
+    .hire-me{
+        color: white;
+        background-color: #F9A826;
+        padding:5px 5px;
+        width: 120px;
+        font-size: 16px;
+    }
+   
 }
