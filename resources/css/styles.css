@@ -738,6 +738,7 @@
         font-size: 20px;
         font-weight: 500;
         text-align: center;
+        text-align: left;
     }
     .skill-heading{
         font-size: 45px;
@@ -746,6 +747,10 @@
     }
 }
 @media(max-width:920px){
+    .about-passion{
+        font-size: 18px;
+        text-align: center;
+    }
     .language-container{
         width:100%;
     }
@@ -977,6 +982,7 @@
             width: 100%;
             height: 300px;
             font-size: 14px;
+            margin-bottom: 20px;
         }
         .first-contact{
             display: flex;
@@ -1015,9 +1021,7 @@
             flex-direction: column;
             justify-content: space-around;
         }
-        .skill-card{
-            margin: 0 auto;
-        }
+        
         .project-container{
             width: 100%;
             height: 1000px;
@@ -1041,6 +1045,7 @@
             width: 95%;
             height: 280px;
         }
+
         .par{
             color: white;
             font-size: 20px;
@@ -1102,13 +1107,13 @@
         .link{
             font-size: 12px;
             padding:10px 10px;
-            width: 80px;
+            width: 70px;
         }
         .profile-container{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            width: 400px;
+            /* width: 400px; */
             height: 740px;
             margin: 0 auto;
         }
@@ -1127,12 +1132,60 @@
         .link-container-footer a{
             font-size: 14px;
         }
+        
+       
     }
     
     
 }
 
 @media(max-width:400px){
+    .skills-container{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%; */
+        height: 2300px;
+        /* background-color: #ebe8e8;
+        border-bottom:  5px solid #eeeeee;     */
+        margin: 0 auto;
+    }
+    .language-container{
+        width:70%;
+        min-height:2100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    #skill-link1,
+    #skill-link2,
+    #skill-link3{
+        width:100%;
+        height: 2000px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .skill-row{
+        width: 100%;
+        height: 1000px;
+        margin: 0 auto;
+    }
+    .skill-card{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .link{
+        font-size: 12px;
+        padding:5px 2px;
+        width: 60px;
+    }
+    .image-container{
+        border: none;
+        margin-top: 30px;
+    }
     .programming-img{
         width: 100%;
         height: 100%;
@@ -1147,5 +1200,24 @@
         width: 120px;
         font-size: 16px;
     }
-   
+    .profile-container{
+        height: 900px;
+    }
+    .portfailo-text{
+        align-self: center;
+        width: 100%;
+        height: 500px;
+        font-size: 10px;
+
+    }
+    .cv-link{
+        width: 80%;
+        padding: 4px 6px;
+    }
+
+    .cv-container{
+      
+        height: 130px;
+    }
+    
 }
