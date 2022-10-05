@@ -1131,15 +1131,14 @@
         }
         .link-container-footer a{
             font-size: 14px;
-        }
-        
-       
-    }
-    
-    
+        }  
+    }    
 }
 
 @media(max-width:400px){
+    .skills-catagory{
+        width: 90%;
+    }
     .about-container{
         width: 100%;
         height: 750px;
@@ -1153,6 +1152,7 @@
         margin: 0 auto;
     }
     .portfailo-link{
+        width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -1210,10 +1210,15 @@
         margin: 0 auto;
         width: 100%;
     }
-    .link{
+    /* .link{
         font-size: 12px;
         padding:5px 2px;
         width: 60px;
+    } */
+    .link{
+        font-size: 12px;
+        padding:5px 4px;
+        width: 70px;
     }
     .image-container{
         border: none;
