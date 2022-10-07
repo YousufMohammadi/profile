@@ -275,6 +275,40 @@
     align-items: center;
     margin: 0 auto;
 }
+.education-heading,
+.experience-heading{
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.education,
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 400px; */
+    margin: 0 auto;
+}
+.education-list,
+.experience-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 220px;
+}
+ul {
+    list-style: none;
+  }
+  
+  ul li::before {
+    content: "\2022";
+    color: #F9A826;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
 .language-container{
     width:70%;
     /* height: 600px; */
@@ -1169,7 +1203,7 @@
     }
     .about-container{
         width: 100%;
-        height: 750px;
+        height: 850px;
     }
     .about-me{
         margin-top: 10px;
@@ -1287,6 +1321,7 @@
     .cv-link{
         width: 80%;
         padding: 4px 6px;
+        margin-bottom: 5px;
     }
 
     .cv-container{
